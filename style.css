@@ -1,0 +1,139 @@
+:root {
+    --bg-color: #244664;
+    --fg-color: #EBEEEB;
+    --la-color: #F08C4D;
+    --ma-color: #97A8B2;
+    --da-color: #D85957;
+
+    --nav-height: 3rem;
+
+    --transition: 0.5s ease-in-out;
+
+}
+
+html {
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+}
+
+header {
+    width: 98vw;
+    height: var(--nav-height);
+    background-color: var(--fg-color);
+    padding: 0.5rem 1rem;
+    margin: 0.5rem auto;
+    border-radius: 0.25rem;
+    box-shadow: 1px 2px 6px rgba(0,0,0,0.8);
+    display: flex;
+}
+
+.zero-sense {
+    display: none;
+}
+
+.logo > i {
+    font-size: 1.5rem;
+    padding: 0.25rem;
+
+    color: var(--bg-color);
+}
+
+.comp-name {
+    font-family: 'JetBrains Mono';
+    font-size: 1.25rem;
+    padding-left: 0.25rem;
+    vertical-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header ul {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    align-items: center;
+    justify-items: baseline;
+    gap: 0.5rem;
+    flex: 2;
+    margin-left: 1rem;
+    padding-right: 1rem;
+    padding-left: 0rem;
+    font-family: 'JetBrains Mono', sans-serif;
+}
+
+.logo {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    align-items: center;
+    justify-items: baseline;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--fg-color);
+    background-color: var(--bg-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    overflow: hidden;
+
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.8);
+
+    transition: background-color var(--transition);
+}
+
+header a:hover {
+    background-color: var(--ma-color);
+}
+
+.spacer {
+    padding-right: 0.5rem;
+    display: none;
+}
+
+.paragraph {
+    width: 98vw;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem auto;
+    border-radius: 0.25rem;
+    box-shadow: 1px 2px 6px rgba(0,0,0,0.8);
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: center;
+    overflow: auto;
+    text-align: justify;
+    font-size: 0.75rem;
+    font-weight: 300;
+}
+
+.e-mail {
+    grid-auto-flow: row;
+}
+
+.first {
+    background-color: var(--fg-color);
+    color: var(--bg-color);
+}
+
+.second {
+    background-color: var(--ma-color);
+}
+
+.third {
+    background-color: var(--da-color);
+}
